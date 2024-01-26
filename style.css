@@ -94,3 +94,37 @@ body {
 .top-header :nth-child(n + 3):nth-child(-n + 5) {
   justify-self: flex-end;
 }
+
+.bottom-header {
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 100px 2fr 100px 100px 100px;
+  padding: 20px;
+}
+
+.bottom-header svg {
+  width: 4em;
+  height: 4em;
+}
+
+.welcome-user {
+  justify-self: flex-start;
+  font-weight: bold;
+}
+
+.welcome-user p:nth-child(2) {
+  font-size: 1.3em;
+  margin-top: -18px;
+}
+
+.bottom-header button {
+  justify-self: flex-end;
+  background-color: #1992d4;
+  padding: 10px;
+  border-radius: 10px;
+  width: 5em;
+  color: aliceblue;
+  border: none;
+}
