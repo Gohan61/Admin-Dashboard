@@ -19,6 +19,7 @@ body {
   background-color: #1992d4;
   color: aliceblue;
   padding: 1em;
+  font-weight: bold;
 }
 
 .sidebar .top-nav > div,
@@ -28,6 +29,11 @@ body {
   grid-template-columns: 1fr 4fr;
   align-items: center;
   justify-items: center;
+  gap: 28px;
+}
+
+.sidebar-navigation {
+  font-size: 1.3em;
 }
 
 .dashboard h1,
@@ -63,4 +69,28 @@ body {
 .main {
   grid-area: 2 / 2 / 6 / 6;
   background-color: #e2e8f0;
+}
+
+.top-header {
+  display: grid;
+  grid-template-columns: 0.3fr 6fr 50px 50px 150px;
+  align-items: center;
+  padding: 20px;
+  gap: 5px;
+}
+
+.top-header svg {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.search-bar {
+  background-color: #e2e8f0;
+  width: clamp(100px, 80%, 30em);
+  height: 25px;
+  border-radius: 10px;
+}
+
+.top-header :nth-child(n + 3):nth-child(-n + 5) {
+  justify-self: flex-end;
 }
